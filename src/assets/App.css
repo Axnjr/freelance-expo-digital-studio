@@ -1,0 +1,144 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: "HK";
+  src: url("NHaasGroteskDSPro-55Rg.4df8dc33.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: "HK";
+  /* background-color: #e6e2de;
+  color: #333333; */
+}
+
+.studio-container{
+    height: 100vh;
+    width: 100vw;
+    /* display: grid;
+    grid-template-rows: auto 50vh auto;
+    gap: 5vw; */
+ 
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+header p{
+  font-size: 1vw;
+  padding: 2vw;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+}
+
+header svg{
+	width: 5vw;
+	height: 5vw;
+}
+
+main{
+  display: grid;
+}
+
+main h1{
+  font-size: 10vw;
+  position: absolute;
+  padding-inline: 1rem;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+  height: 32vw;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px;
+}
+
+main h1 .hero-character{
+  display: inline-block;
+  transform: translateY(100vw);
+}
+
+main h1 span:nth-child(5){
+  text-indent: 1rem;
+}
+
+main h1 span:nth-child(11)::after{
+  content: "\a";
+  white-space: pre;
+}
+
+main h1 span p{
+  font-size: 1.5vw;
+  text-indent: 2rem;
+  text-align: right;
+  -webkit-text-stroke: 0px;
+  font-weight: bold;
+}
+
+#abt{
+  opacity: 0;
+  width: 100%;
+  white-space: break-spaces;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  left: 0%;
+  opacity: 0;
+}
+
+footer a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1vw;
+  color: currentColor;
+  margin-inline: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width:850px){
+
+  header p,footer p{
+    font-size: 0.8rem;
+  }
+
+  main h1 {
+    font-size: 5rem;
+    height: 15rem;
+  }
+
+  main h1 span p{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media screen and (max-width:650px){
+
+  main h1{
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width:430px){
+
+  main h1{
+    font-size: 3rem;
+  }
+
+}
