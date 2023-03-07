@@ -36,7 +36,7 @@ function App() {
 		gsap.context(() => {
 			gsap.to(".hero-character", {
 				y: "0vw",
-				duration: 0.5,
+				duration: 1,
 				stagger: .05,
 				delay: 0.5
 			})
